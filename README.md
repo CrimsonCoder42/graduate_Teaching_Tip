@@ -7,7 +7,14 @@ Scenario: You have a client looking to have you create the simplest of Node/Expr
 *This project does not need to be uploaded to digital ocean. However the essentials that would be needed in order for the code to run locally must be satisfied. Also please keep in mind that not only may code be missing but code maybe be placed with in the format that is in excess of what's required and may stop the project from running. 
 
 
-The app is a very simple 'Hello World' app with a Pug/Jade view. However, there are 6 
+The app is a very simple 'Hello World' app with a Pug/Jade view. However, there are 6 clues to help you get the app running. 
+
+Step 1 will be to clone the current code from the given git repo into your own repo. 
+Step 2 will be to download all necessary packages (nodemon is optional). 
+Step 3 will be to identify and update the codebase to allow it's functionality error free. 
+Step 4 will be to comment those changes in the current code base and how they effect the ability for the application to run. 
+
+
 
 Clue 1 : In Week 4 lesson 1 we learned how to build a basic HTTP server. What is missing from that would allow you to visually see your view in a browser window? 
 
