@@ -30,8 +30,21 @@ The package.json file is kind of a manifest for your project. It can do a lot of
 
 
 
-4) Package.json has been removed listing all dependencies attached to the project. 
-
-5) app.use('/', indexRouter); missing from app.js line 22. Routing refers to how an application’s endpoints (URIs) respond to client requests. For an introduction to routing, see Basic routing.
+4) app.use('/', indexRouter); missing from app.js line 22. Routing refers to how an application’s endpoints (URIs) respond to client requests. For an introduction to routing, see Basic routing.
 
 You define routing using methods of the Express app object that correspond to HTTP methods; for example, app.get() to handle GET requests and app.post to handle POST requests. For a full list, see app.METHOD. You can also use app.all() to handle all HTTP methods and app.use() to specify middleware as the callback function (See Using middleware for details). "https://expressjs.com/en/guide/routing.html"
+
+
+
+5) link(rel='stylesheet', href='/stylesheets/style.css') removed from layout.jade line 5 disconnecting from style sheets. 
+
+6) extends layout removed from Pug/jade template. line 1 index.jade. Pug supports template inheritance. Template inheritance works via the block and extends keywords.
+
+In a template, a block is simply a “block” of Pug that a child template may replace. This process is recursive.
+
+Pug blocks can provide default content, if appropriate. Providing default content is purely optional, though. The example below defines block scripts, block content, and block foot.
+
+"https://pugjs.org/language/inheritance.html"
+
+
+
