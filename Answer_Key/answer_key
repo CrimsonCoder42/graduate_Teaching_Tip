@@ -1,0 +1,37 @@
+1) var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port); Has been removed from bin/www file leaving to port for app undefined line 15. 
+
+
+
+2) var cookieParser = require('cookie-parser'); has been removed from app.js file line 4. 
+
+
+
+
+3) package.json has been removed from project: {
+  "name": "graduate-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
+}
+
+The package.json file is kind of a manifest for your project. It can do a lot of things, completely unrelated. It's a central repository of configuration for tools, for example. It's also where npm and yarn store the names and versions for all the installed packages. 
+"https://nodejs.dev/learn/the-package-json-guide"
+
+
+
+4) Package.json has been removed listing all dependencies attached to the project. 
+
+5) app.use('/', indexRouter); missing from app.js line 22. Routing refers to how an application’s endpoints (URIs) respond to client requests. For an introduction to routing, see Basic routing.
+
+You define routing using methods of the Express app object that correspond to HTTP methods; for example, app.get() to handle GET requests and app.post to handle POST requests. For a full list, see app.METHOD. You can also use app.all() to handle all HTTP methods and app.use() to specify middleware as the callback function (See Using middleware for details). "https://expressjs.com/en/guide/routing.html"
